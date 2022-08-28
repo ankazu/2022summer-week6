@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ["./app/**/*.{html,ejs}"],
   theme: {
@@ -5,7 +6,7 @@ module.exports = {
       sm: '576px',
       md: '768px',
       lg: '960px',
-      xl: '1296px',
+      xl: '1320px',
     },
     container: {
       center: true,
@@ -14,7 +15,8 @@ module.exports = {
     extend: {
       fontSize: {
         'xs': '12px',
-        '3xl': '28px'
+        '3xl': '28px',
+        '4xl': '32px'
       },
       colors:{
         primary:{
@@ -24,7 +26,7 @@ module.exports = {
         secondary:{
           DEFAULT:'#FFFFFF',
           dark:'#1C1C1C',
-          light:'#202020'
+          light:'#c1c1c1'
         },
         darkGary:{
           DEFAULT:'#2D2D2D',
@@ -40,6 +42,9 @@ module.exports = {
       padding: {
         '13': '52px',
         '21': '84px'
+      },
+      fontFamily: {
+        'Azeret':['"Azeret Mono"', ...defaultTheme.fontFamily.sans]
       },
     },
   },

@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
 	html {
-		font-family:'Azeret Mono', Noto Sans, system-ui, sans-serif;
+		font-family: Noto Sans, system-ui, sans-serif;
 	}
 
 	img {
@@ -14,10 +14,10 @@
 @tailwind components;
 @layer components {
 	.title {
-		@apply text-3xl text-white relative
+		@apply text-3xl text-white relative pb-4
 	}
 	.title::before {
-		@apply absolute content-[''] w-12 h-[3px] bg-primary-green left-0 -bottom-4
+		@apply absolute content-[''] w-12 h-[3px] bg-primary-green left-0 bottom-0
 	}
 	.title-center {
 		@apply text-center
@@ -37,3 +37,21 @@
 
 
 @tailwind utilities;
+
+.pagination-ctrl {
+	left: 36%;
+	transform: translateX(-50%);
+}
+.pagination-ctrl .swiper-pagination-bullet {
+	background: #62DB54;
+	opacity: 1;
+}
+.pagination-ctrl .swiper-pagination-bullet-active {
+	width: 1rem;
+	border-radius: 50px;
+}
+.pagination-ctrl .swiper-button-next, 
+.pagination-ctrl .swiper-button-prev {
+	margin-top: 0;
+	color: #62DB54;
+}
