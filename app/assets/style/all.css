@@ -1,0 +1,39 @@
+@tailwind base;
+@layer base {
+	html {
+		font-family:'Azeret Mono', Noto Sans, system-ui, sans-serif;
+	}
+
+	img {
+		vertical-align: middle;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@tailwind components;
+@layer components {
+	.title {
+		@apply text-3xl text-white relative
+	}
+	.title::before {
+		@apply absolute content-[''] w-12 h-[3px] bg-primary-green left-0 -bottom-4
+	}
+	.title-center {
+		@apply text-center
+	}
+	.title-center::before {
+		@apply left-2/4 -translate-x-2/4
+	}
+
+	.item {
+		@apply -mx-3 col-span-12 md:col-start-4 grid grid-cols-4
+	}
+	.item-list {
+		@apply col-span-4 md:col-span-2 xl:col-span-1 mx-3
+	}
+
+}
+
+
+@tailwind utilities;
