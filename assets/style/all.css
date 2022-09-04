@@ -2014,10 +2014,6 @@ select {
     background-color: rgb(45 45 45 / var(--tw-bg-opacity));
   }
 
-  .md\:bg-\[url\(\'\.\.\/images\/bg_home\.jpg\'\)\] {
-    background-image: url('../images/bg_home.jpg');
-  }
-
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2123,6 +2119,10 @@ select {
 
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:bg-\[url\(\'\.\.\/images\/bg_home\.jpg\'\)\] {
+    background-image: url('../images/bg_home.jpg');
   }
 
   .lg\:py-12 {
