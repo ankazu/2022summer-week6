@@ -572,8 +572,11 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
-	html {
+	body {
 		font-family: Noto Sans, system-ui, sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		background-color: #1A1A1A;
 	}
 
 	img {

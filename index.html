@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -49,7 +50,7 @@
 		</div>
 	</section>
 
-	<section class="bg-darkGary py-10 md:py-20">
+	<section class="bg-darkGary py-10 md:py-20" data-aos="fade-up">
 		<div class="container">
 			<ul class="item items-center">
 				<li class="item-list">
@@ -79,7 +80,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="bg-darkGary-dark py-10 md:py-20">
+	<section class="bg-darkGary-dark py-10 md:py-20" data-aos="fade-up">
 		<div class="container">
 				<h2 class="title title-center">預期上課流程</h2>
 				<ul class="item">
@@ -107,7 +108,7 @@
 				  
 		</div>
 	</section>
-	<section class="bg-darkGary py-10 md:py-20">
+	<section class="bg-darkGary py-10 md:py-20" data-aos="fade-up">
 		<div class="container">
 			<h2 class="title title-center">你想要學習的程式，都在這裡</h2>
 		</div>
@@ -133,7 +134,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="bg-black py-10 md:py-20">
+	<section class="bg-black py-10 md:py-20" data-aos="fade-up">
 		<div class="container">
 			<h2 class="title title-center">熱門推薦課程</h2>
 			<ul class="item">
@@ -203,7 +204,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section data-aos="fade-up">
 		<ul class="flex flex-wrap">
 			<li class="w-full md:w-1/2 xl:w-1/4 h-2/5screen lg:h-[615px] bg-cover bg-[url('../images/info01.jpg')] text-white flex flex-col items-center justify-center transition-all duration-500 xl:items-start group px-12 py-10 relative">
 				<div class="absolute bg-darkGary-dark h-full w-full left-0 top-0 z-10 opacity-90 transition-all duration-300 hover:opacity-0"></div>
@@ -247,7 +248,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="bg-secondary-dark py-10 md:py-20">
+	<section class="bg-secondary-dark py-10 md:py-20" data-aos="fade-up">
 		<div class="container">
 			<h2 class="title title-center">文章分享</h2>
 			<ul class="flex flex-wrap -mx-3">
@@ -296,7 +297,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="bg-black py-10 md:py-20 bg-[url('../images/bg_share.jpg')] bg-contain bg-no-repeat bg-center">
+	<section class="bg-black py-10 md:py-20 bg-[url('../images/bg_share.jpg')] bg-contain bg-no-repeat bg-center" data-aos="fade-up">
 		<div class="container relative">
 			<h2 class="title title-center mb-12">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h2>
 			<div class="swiper giveBack">
@@ -378,7 +379,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="py-10 md:py-20 bg-black">
+	<section class="py-10 md:py-20 bg-black" data-aos="fade-up">
 		<div class="container">
 			<div class="lg:w-9/12 bg-[#202020] mx-auto flex flex-col md:flex-row items-center px-12 py-8 text-white rounded-3xl">
 				<span class="material-icons text-9xl text-darkGary-light md:mr-8">
@@ -399,6 +400,13 @@
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      once: true
+    });
+  </script>
   <script src="./assets/js/all.js"></script>
 </body>
 
