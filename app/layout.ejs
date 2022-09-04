@@ -15,13 +15,11 @@
 
 <body>
   <header>
-    <div class="bg-darkGary text-white">
+    <nav class="bg-darkGary text-white fixed left-0 top-0 right-0 z-50">
       <div class="container flex justify-between items-center">
-          <a class="h-6 w-6 block md:w-[174px] md:h-[42px] hover:opacity-80 transition-all" href="index.html">
-            <img src="assets/images/logo.svg" alt="Coding Home">
+          <a class="h-6 w-6 block sm:w-[174px] sm:h-[42px] bg-[url('../images/logo2.svg')] sm:bg-[url('../images/logo.svg')] hover:opacity-80 transition-all" href="index.html">
           </a>
-          <nav>
-            <ul class="flex flex-col sm:flex-row items-center justify-between w-full gap-6 py-6 px-3 transition-all duration-500 md:px-0 md:w-auto md:gap-x-12">
+            <ul class="menu flex flex-col sm:flex-row items-center justify-between w-full gap-6 py-6 px-3 transition-all duration-500 sm:px-0 sm:w-auto sm:gap-x-12">
               <li class="hover:bg-primary-green hover:text-transparent hover:bg-clip-text"><a href="index.html">首頁</a></li>
               <li class="hover:bg-primary-green hover:text-transparent hover:bg-clip-text"><a href="#">課程介紹</a></li>
               <li class="hover:bg-primary-green hover:text-transparent hover:bg-clip-text"><a class="flex items-center" href="#">
@@ -30,13 +28,15 @@
                 </span>
                 登入</a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="block bg-half-green-blue h-0.5 w-full"></div>
-      </div>
+            <div class="menu_btn"></div>
+          </div>
+          <div class="block bg-half-green-blue h-0.5 w-full"></div>
+        </nav>
     </header>
 
-  <%- contents %>
+  <main class="mt-[74px]">
+    <%- contents %>
+  </main>
 
   <footer class="bg-darkGary-dark py-6 text-center">
     <p class="text-darkGary-light">Coding Home © 2022 All Rights Reserved</p>

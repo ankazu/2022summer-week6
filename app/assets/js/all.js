@@ -3,6 +3,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper(".giveBack", {
+  spaceBetween: 24,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -12,3 +13,10 @@ var swiper2 = new Swiper(".giveBack", {
   },
   mousewheel: true,
 });
+
+const menuBtn = document.querySelector('.menu_btn');
+const menuNav = document.getElementsByTagName('nav')[0];
+
+menuBtn.addEventListener('click', function(e) {
+  menuNav.classList.toggle('menu_open');
+})

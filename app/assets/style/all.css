@@ -38,8 +38,24 @@
 
 @tailwind utilities;
 
+.menu_btn {
+	@apply block relative sm:hidden w-6 h-6 my-6 before:w-[16px] before:h-[2px] before:absolute before:bg-primary-green before:left-1 before:top-2 after:w-[16px] after:h-[2px] after:absolute after:bg-primary-green after:left-1 after:top-[14px] after:transition-all after:duration-300
+}
+
+.menu {
+	@apply absolute left-full top-full sm:relative sm:left-auto sm:right-auto sm:top-auto z-40 bg-secondary-dark sm:bg-transparent
+}
+
+.menu_open .menu_btn {
+	@apply after:w-[10px]
+}
+.menu_open .menu {
+	@apply left-0
+}
+
+/* swiper */
 .pagination-ctrl {
-	left: 36%;
+	left: 32%;
 	transform: translateX(-50%);
 }
 .pagination-ctrl .swiper-pagination-bullet {
@@ -54,4 +70,9 @@
 .pagination-ctrl .swiper-button-prev {
 	margin-top: 0;
 	color: #62DB54;
+}
+@media (max-width:960px) {
+	.pagination-ctrl {
+		left: 50%;
+	}
 }

@@ -31,7 +31,8 @@ module.exports = {
         darkGary:{
           DEFAULT:'#2D2D2D',
           light:'#909090',
-          dark:'#1A1A1A'
+          dark:'#1A1A1A',
+          deep: '#202020'
         }
       },
       backgroundImage: {
