@@ -38,6 +38,7 @@ module.exports = {
       backgroundImage: {
         'half-green-blue': "linear-gradient(to right, #62DB54 50% , #09ACF5 50%);",
         'mix-green-blue': "linear-gradient(to right, #62DB54 , #09ACF5);",
+        'mix-blue-green': "linear-gradient(to right, #09ACF5, #62DB54);",
         'mix-vertical-green-blue': "linear-gradient(to bottom, #62DB54 , #09ACF5);",
       },
       padding: {
