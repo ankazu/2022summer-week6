@@ -573,8 +573,7 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 	body {
-		font-family: Noto Sans, system-ui, sans-serif;
-		font-size: 16px;
+		font-family: 'Noto Sans', system-ui, sans-serif;
 		line-height: 1.5;
 		background-color: #1A1A1A;
 	}
@@ -684,18 +683,6 @@ select {
   background-color: rgb(98 219 84 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
-}
-
-.title-center {
-  text-align: center;
-}
-
-.title-center::before {
-  left: 50%;
-  --tw-translate-x: -50%;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .item {
@@ -1179,6 +1166,11 @@ select {
 }
 
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
@@ -1196,11 +1188,6 @@ select {
 
 .border-r {
   border-right-width: 1px;
-}
-
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 
@@ -1770,6 +1757,10 @@ select {
   content: var(--tw-content);
   position: absolute;
 }
+.before\:left-2\/4::before {
+  content: var(--tw-content);
+  left: 50%;
+}
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
@@ -1801,6 +1792,13 @@ select {
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+.before\:-translate-x-2\/4::before {
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .before\:rounded-3xl::before {
   content: var(--tw-content);
