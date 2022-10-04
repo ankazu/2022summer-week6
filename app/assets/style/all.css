@@ -49,6 +49,10 @@
 	@apply left-0
 }
 
+.active {
+	@apply text-primary-green border-primary-green
+}
+
 /* swiper */
 .pagination-ctrl {
 	left: 32%;
