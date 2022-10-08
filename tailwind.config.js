@@ -40,6 +40,7 @@ module.exports = {
         'mix-green-blue': "linear-gradient(to right, #62DB54 , #09ACF5);",
         'mix-blue-green': "linear-gradient(to right, #09ACF5, #62DB54);",
         'mix-vertical-green-blue': "linear-gradient(to bottom, #62DB54 , #09ACF5);",
+        'mix-vertical-blue-green': "linear-gradient(to bottom, #09ACF5, #62DB54);",
       },
       padding: {
         '13': '52px',
