@@ -25,7 +25,7 @@
             <ul class="menu flex flex-col sm:flex-row items-center justify-between w-full gap-6 py-6 px-3 transition-all duration-500 sm:px-0 sm:w-auto sm:gap-x-12">
               <li class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a href="index.html">首頁</a></li>
               <li class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a href="class-list.html">課程介紹</a></li>
-              <li class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a class="flex items-center" href="#">
+              <li id="sign_in" class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a class="flex items-center" href="#">
                 <span class="material-symbols-outlined pr-1">
                 account_circle
                 </span>
@@ -44,6 +44,36 @@
   <footer class="bg-darkGary-dark py-6 text-center">
     <p class="text-darkGary-light">Coding Home © 2022 All Rights Reserved</p>
   </footer>
+
+  <div id="login_modal" class="hidden">
+    <div class="fixed left-0 top-0 right-0 bottom-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+      <div class="bg-darkGary border border-white p-6 w-full max-w-[636px] relative text-white">
+        <span id="login_close" class="material-symbols-outlined hover:cursor-pointer absolute right-6 top-7">
+          close
+        </span>
+        <div class="text-2xl mb-8 text-center">登入</div>
+        <div class="w-full max-w-[336px] mx-auto ">
+          <form class="mb-12" action="">
+            <div class="flex flex-col text-secondary-light mb-6">
+              <label for="sign_email" class="mb-[6px]">信箱</label>
+              <input id="sign_email" class="border border-white bg-darkGary-dark px-4 py-2 rounded-[4px] placeholder:text-secondary-light focus:border-current focus:ring-transparent" type="email" placeholder="請輸入信箱">
+            </div>
+            <div class="flex flex-col text-secondary-light mb-6">
+              <label for="sign_email" class="mb-[6px]">密碼</label>
+              <input id="sign_email" class="border border-white bg-darkGary-dark px-4 py-2 rounded-[4px] placeholder:text-secondary-light focus:border-current focus:ring-transparent" type="email" placeholder="請輸入密碼">
+            </div>
+            <button class="bg-mix-blue-green w-full py-2 text-lg rounded-[4px] transition-all duration-500 hover:bg-mix-green-blue" type="submit">登入</button>
+          </form>
+          <div>
+            <div class="flex items-center justify-center gap-4 text-secondary-light mb-4"><span class="w-[72px] sm:w-[104px] h-[1px] bg-secondary-light"></span>其他登入方式<span class="w-[72px] sm:w-[104px] h-[1px] bg-secondary-light"></span></div>
+            <a class="rounded-[4px] flex items-center py-2 gap-14 border border-white px-8 mb-6 transition-all duration-300 hover:opacity-80" href="#"><img class="w-6" src="./assets/images/icon_fb.svg" alt="Facebook">Facebook登入</a>
+            <a class="rounded-[4px] flex items-center py-2 gap-16 border border-white px-8 mb-6 transition-all duration-300 hover:opacity-80" href="#"><img class="w-6" src="./assets/images/icon_google.svg" alt="Google">Google登入</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./assets/js/vendors.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
