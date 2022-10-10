@@ -30,3 +30,15 @@ loginClose.addEventListener('click', function() {
 signIn.addEventListener('click', function() {
   loginModel.style.display = 'block';
 })
+
+const reserveDate = document.querySelector("#reserve-date");
+const validDate = document.querySelector("#valid-date");
+
+const datepickerInit = (el) => {
+    new Datepicker(el, {
+        orientation: "bottom auto",
+    });
+};
+
+if (reserveDate) datepickerInit(reserveDate);
+if (validDate) datepickerInit(validDate);

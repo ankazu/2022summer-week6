@@ -1,0 +1,53 @@
+---
+title: 付款成功
+layout: ./app/layout.ejs
+engine: ejs
+current: payment-complete
+---
+
+
+<section class="bg-secondary-dark px-3 pt-8 pb-4 min-h-[88px] flex items-start">
+	<ul
+		class="w-4/5 lg:w-full max-w-[768px] mx-auto relative flex items-center justify-between bg-primary-green h-[2px]"
+	>
+		<li class="flex flex-col items-center text-white gap-1 -translate-x-1/2 translate-y-[14px] checkout_current">
+			<span
+				class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] bg-secondary-dark relative z-10"
+			>1</span>
+			課程報名
+		</li>
+		<li class="flex flex-col items-center text-white gap-1 translate-y-[14px] checkout_current">
+			<span
+				class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] bg-secondary-dark relative z-10"
+			>2</span>
+			信用卡付款
+		</li>
+		<li class="flex flex-col items-center text-white gap-1 translate-x-1/2 translate-y-[14px] checkout_current">
+			<span
+				class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] bg-secondary-dark relative z-10"
+			>3</span>
+			付款成功
+		</li>
+	</ul>
+</section>
+
+<section class="pt-12 pb-10 md:pb-36 bg-black">
+	<div class="container">
+		<div class="bg-secondary-dark w-full max-w-[416px] mx-auto px-8 py-12" data-aos="fade-up">
+			<h3 class="text-white text-center text-2xl flex items-center justify-center gap-4">
+				<span class="material-symbols-outlined text-5xl text-primary-green">
+				verified
+			</span>信用卡付款</h3>
+			<div class="mt-12">
+				<p class="mb-8 text-white">恭喜您已完成「2022 Python 全攻略｜從入門到實務」課程報名，請注意郵件訊息，家教老師將與您聯繫！</p>
+				<div class="flex justify-center text-white text-lg">
+					<a
+						class="py-2 px-12 bg-mix-blue-green rounded-lg hover:bg-mix-green-blue"
+						href="index.html"
+					>看看其他課程</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
