@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>課程報名</title>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header>
+    <nav class="bg-darkGary text-white fixed left-0 top-0 right-0 z-50">
+      <div class="container flex justify-between items-center">
+          <a class="h-6 w-6 block sm:w-[174px] sm:h-[42px] bg-[url('../images/logo2.svg')] sm:bg-[url('../images/logo.svg')] hover:opacity-80 transition-all" href="index.html">
+          </a>
+            <ul class="menu flex flex-col sm:flex-row items-center justify-between w-full gap-6 py-6 px-3 transition-all duration-500 sm:px-0 sm:w-auto sm:gap-x-12">
+              <li class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a href="index.html">首頁</a></li>
+              <li class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a href="class-list.html">課程介紹</a></li>
+              <li id="sign_in" class="hover:bg-mix-green-blue hover:text-transparent hover:bg-clip-text"><a class="flex items-center" href="#">
+                <span class="material-symbols-outlined pr-1">
+                account_circle
+                </span>
+                登入</a></li>
+            </ul>
+            <div class="menu_btn"></div>
+          </div>
+          <div class="block bg-half-green-blue h-0.5 w-full"></div>
+        </nav>
+    </header>
+
+  <main class="mt-[74px]">
+    
+<section class="bg-secondary-dark px-3 pt-8 pb-4 min-h-[88px] flex items-start">
+	<ul class="w-4/5 lg:w-full max-w-[768px] mx-auto relative flex items-center justify-between bg-secondary-light h-[2px]" data-aos="fade-down">
+		<li class="flex flex-col items-center text-white gap-1 -translate-x-1/2 translate-y-[14px] checkout_current">
+			<span class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] relative z-10">1</span>
+			課程報名
+		</li>
+		<li class="flex flex-col items-center text-white gap-1 translate-y-[14px]">
+			<span class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] bg-secondary-dark relative z-10">2</span>
+			信用卡付款
+		</li>
+		<li class="flex flex-col items-center text-white gap-1 translate-x-1/2 translate-y-[14px]">
+			<span class="leading-none text-xs border border-white rounded-full px-[6px] py-[3px] bg-secondary-dark relative z-10">3</span>
+			付款成功
+		</li>
+	</ul>
+</section>
+
+<section class="pt-12 pb-10 md:pb-36 bg-black">
+	<div class="container">
+		<div class="flex flex-col md:flex-row items-center justify-center">
+			<div class="bg-darkGary px-8 py-12 text-center text-white w-full md:w-4/12 relative before:absolute before:content-[''] before:border-darkGary before:right-1/2 md:before:-right-6 before:-bottom-6 md:before:bottom-1/2 before:translate-x-1/2 md:before:translate-x-0 md:before:translate-y-1/2 before:border-[12px] before:border-l-transparent  md:before:border-l-darkGary before:border-r-transparent  before:border-t-darkGary md:before:border-t-transparent before:border-b-transparent md:-mr-8 mb-11 md:mb-0" data-aos="fade-right">
+				<img class="rounded-full border-2 border-primary-green w-[100px] mx-auto" src="./assets/images/teacher01.jpg" alt="">
+				<h2 class="text-lg mb-1 mt-6">2022 Python 全攻略｜從入門到實務</h2>
+				<span class="text-primary-green">前端語言</span>
+				<p class="mt-2 text-left">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+			</div>
+			<div class="bg-secondary-dark w-full md:w-8/12 px-5 py-8 md:pl-28 md:pr-8 md:py-12 md:-ml-8" data-aos="fade-left">
+				<h3 class="text-white text-center text-2xl">課程報名</h3>
+				<div class="mt-12">
+					<h4 class="text-white text-lg mb-1">選擇付款方式</h4>
+					<ul class="-mx-2 flex flex-wrap gap-2 text-white mb-8">
+						<li class="rounded-lg w-full sm:w-[calc(50%-16px)] xl:w-auto text-center text-primary-green border border-primary-green px-8 py-4 hover:cursor-pointer">信用卡付款</li>
+						<li class="rounded-lg w-full sm:w-[calc(50%-16px)] xl:w-auto text-center border border-white px-8 py-4 transition-all duration-300 hover:cursor-pointer hover:text-primary-green hover:border-primary-green">超商繳款</li>
+						<li class="rounded-lg w-full sm:w-[calc(50%-16px)] xl:w-auto text-center border border-white px-8 py-4 transition-all duration-300 hover:cursor-pointer hover:text-primary-green hover:border-primary-green">ATM轉帳</li>
+						<li class="rounded-lg w-full sm:w-[calc(50%-16px)] xl:w-auto text-center border border-white px-8 py-4 transition-all duration-300 hover:cursor-pointer hover:text-primary-green hover:border-primary-green">12期分期付款</li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="text-white text-lg mb-6">訂單資訊</h4>
+					<form class="text-secondary-light" action="">
+						<div class="flex flex-wrap justify-between mb-6">
+							<div class="xl:max-w-[331px] flex flex-col w-full mb-6 xl:mb-0">
+								<label class="text-secondary-light m-1" for="name">姓名</label>
+								<input class="py-2 px-4 bg-secondary-dark border border-white rounded placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" type="text" id="name" placeholder="請輸入姓名">
+							</div>
+							<div class="xl:max-w-[331px] flex flex-col w-full">
+								<label class="text-secondary-light m-1" for="phone">電話</label>
+								<input class="py-2 px-4 bg-transparent border border-white rounded placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" id="phone" type="tel" placeholder="請輸入電話號碼">
+							</div>
+						</div>
+						<div class="w-full flex flex-col mb-6">
+							<label class="text-secondary-light m-1" for="email">Email</label>
+							<input
+								class="py-2 px-4 bg-transparent border border-white rounded placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" type="email" id="email" placeholder="請輸入Email">
+						</div>
+						<div class="flex flex-wrap justify-between mb-6">
+							<div class="xl:max-w-[331px] flex flex-col w-full mb-6 xl:mb-0">
+								<label class="text-secondary-light m-1" for="class">課程</label>
+								<select
+									name="course-duration"
+									id="class"
+									class="rounded border border-white bg-transparent py-2 px-4 outline-none  focus:border-primary-green focus:ring-primary-green text-secondary-light">
+									<option value="10堂50分鐘">10堂50分鐘</option>
+									<option value="1堂50分鐘">1堂50分鐘</option>
+									<option value="3堂50分鐘">3堂50分鐘</option>
+									<option value="20堂50分鐘">20堂50分鐘</option>
+									<option value="洽談報價">洽談報價</option>
+								</select>
+							</div>
+							<div class="xl:max-w-[331px] flex flex-col w-full">
+								<label class="text-secondary-light m-1" for="reserve-date">想預約的日期</label>
+								<input type="text" name="reserve-date" placeholder="請選擇日期" id="reserve-date"
+									class="py-2 px-4 bg-transparent border border-white rounded placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green">
+							</div>
+						</div>
+						<div class="w-full flex flex-col mb-6">
+							<label class="text-secondary-light m-1"for="">上課地點</label>
+							<input class="py-2 px-4 bg-transparent border border-white rounded placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" type="text" placeholder="請輸入上課地點">
+						</div>
+						<div class="flex justify-between items-center text-white text-lg">
+							<span class="inline-block font-Azeret">NT$1600</span>
+							<!-- <button class="py-2 px-12 bg-mix-blue-green rounded-lg hover:bg-mix-green-blue" type="submit">前往結賬</button> -->
+							<a class="py-2 px-12 bg-mix-blue-green rounded-lg hover:bg-mix-green-blue" href="checkout-step2.html">前往結賬</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  </main>
+
+  <footer class="bg-darkGary-dark py-6 text-center">
+    <p class="text-darkGary-light">Coding Home © 2022 All Rights Reserved</p>
+  </footer>
+
+  <div id="login_modal" class="hidden">
+    <div class="fixed left-0 top-0 right-0 bottom-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+      <div class="bg-darkGary border border-white p-6 w-full max-w-[636px] relative text-white">
+        <span id="login_close" class="material-symbols-outlined hover:cursor-pointer absolute right-6 top-7">
+          close
+        </span>
+        <div class="text-2xl mb-8 text-center">登入</div>
+        <div class="w-full max-w-[336px] mx-auto ">
+          <form class="mb-12" action="">
+            <div class="flex flex-col text-secondary-light mb-6">
+              <label for="sign_email" class="mb-[6px]">信箱</label>
+              <input id="sign_email" class="border border-white bg-darkGary-dark px-4 py-2 rounded-[4px] placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" type="email" placeholder="請輸入信箱">
+            </div>
+            <div class="flex flex-col text-secondary-light mb-6">
+              <label for="sign_email" class="mb-[6px]">密碼</label>
+              <input id="sign_email" class="border border-white bg-darkGary-dark px-4 py-2 rounded-[4px] placeholder:text-secondary-light focus:border-primary-green focus:ring-primary-green" type="email" placeholder="請輸入密碼">
+            </div>
+            <button class="bg-mix-blue-green w-full py-2 text-lg rounded-[4px] transition-all duration-500 hover:bg-mix-green-blue" type="submit">登入</button>
+          </form>
+          <div>
+            <div class="flex items-center justify-center gap-4 text-secondary-light mb-4"><span class="w-[72px] sm:w-[104px] h-[1px] bg-secondary-light"></span>其他登入方式<span class="w-[72px] sm:w-[104px] h-[1px] bg-secondary-light"></span></div>
+            <a class="rounded-[4px] flex items-center py-2 gap-14 border border-white px-8 mb-6 transition-all duration-300 hover:opacity-80" href="#"><img class="w-6" src="./assets/images/icon_fb.svg" alt="Facebook">Facebook登入</a>
+            <a class="rounded-[4px] flex items-center py-2 gap-16 border border-white px-8 mb-6 transition-all duration-300 hover:opacity-80" href="#"><img class="w-6" src="./assets/images/icon_google.svg" alt="Google">Google登入</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      once: true
+    });
+  </script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
